@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Foodplanners</h1>
+
+
+    <% @foodplanners.each do |foodplanner| %>
+
+        <h2><%= foodplanner.title %></h2>
+        <h3>Breakfast</h3>
+        <p><%= foodplanner.breakfast %></p>
+        <h3>Lunch</h3>
+        <p><%= foodplanner.lunch %></p>
+        <h3>Dinner</h3>
+        <p><%= foodplanner.dinner %></p>
+        <h3>Snacks</h3>
+        <p><%= foodplanner.snacks %></p>
+        <h3>Date</h3>
+        <h3><%= foodplanner.date %></h3>
+        <h3>Shopping List</h3>
+        <p><%= foodplanner.shoppinglist %></p>
+        <p>
+          <%= link_to 'Show', foodplanner %>
+          <%= link_to 'Edit', edit_foodplanner_path(foodplanner) %>
+          <%= link_to 'Destroy', foodplanner, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </p>
+    <% end %>
+  
+
+<br>
+
+<%= link_to 'New Foodplanner', new_foodplanner_path %>
