@@ -2,5 +2,6 @@
 <!-- Komodo Project File - DO NOT EDIT -->
 <project id="04ef3fe5-ee7d-4279-a72d-4bf5903b610f" kpf_version="5" name="dietdiary.komodoproject">
 <preference-set idref="04ef3fe5-ee7d-4279-a72d-4bf5903b610f" id="project" preftype="project">
+  <long id="prefs_version">1</long>
 </preference-set>
 </project>
